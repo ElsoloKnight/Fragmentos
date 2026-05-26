@@ -25,7 +25,6 @@ class BlankFragment : Fragment() {
         _binding = FragmentBlankBinding.inflate(inflater,
                 container, false)
         return binding.root
-        return inflater.inflate(R.layout.fragment_blank, container, false)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,7 +60,7 @@ class BlankFragment : Fragment() {
         super.onDestroyView()
         Log.d(TAG, "onDestroyView")
         _binding = null
-    
+
 
     }
 
